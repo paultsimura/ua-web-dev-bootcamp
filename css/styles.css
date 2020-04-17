@@ -1,0 +1,146 @@
+/* CSS Variables */
+:root {
+    --primary: #ff7562;
+    --primary-hover: #c75a4c;
+    --dark: #2A363B;
+    --dark-hover: #4e6266;
+    --light: #fff;
+}
+
+/* General configs */
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 0;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primary-hover);
+    text-decoration: none;
+}
+
+.bg-dark {
+    background: var(--dark) !important;
+}
+.bg-primary {
+    background: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+.text-dark {
+    color: var(--dark) !important;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 20px 30px;
+    font-size: 14px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    background: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+}
+
+.btn.btn-outline-white {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: none;
+}
+.btn.btn-outline-white:hover,
+.btn.btn-outline-white:focus,
+.btn.btn-outline-white:active {
+    background: #fff !important;
+    border-color: #fff !important;
+    color: #000 !important;
+}
+
+.page-section {
+    padding: 4rem 2rem;
+}
+
+hr.divider {
+    max-width: 4rem;
+    border-width: 0.2rem;
+    border-color: var(--primary);
+}
+hr.light {
+    border-color: #fff;
+}
+
+/* Navbar */
+.custom-navbar-dark {
+    background: transparent !important;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.custom-navbar-dark .navbar-nav > .nav-item > .nav-link {
+    font-size: 16px;
+    padding: 30px 20px;
+}
+
+/* Cover */
+.cover {
+    background: linear-gradient(to bottom, rgba(42, 54, 59, 0.5) 0%, rgba(42, 54, 59, 0.8) 100%), url(../assets/img/bg-cover.jpg) no-repeat center center fixed;
+}
+.cover h1 {
+    line-height: 1.5;
+}
+.cover .float {
+    visibility: inherit;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .cover .btn {
+        width: 100% !important;
+    }
+    .cover h1 {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    .cover .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Reusable */
+.bg-cover {
+    background-size: cover !important;
+}
+
+.vh-100 {
+    min-height: 100vh;
+}
