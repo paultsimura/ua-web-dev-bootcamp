@@ -125,7 +125,7 @@ hr.light {
 
 /* Cover */
 .cover {
-    background: linear-gradient(to bottom, rgba(42, 54, 59, 0.5) 0%, rgba(42, 54, 59, 0.8) 100%), url(../assets/img/bg-cover.jpg) no-repeat center center scroll;
+    background: linear-gradient(to bottom, rgba(42, 54, 59, 0.5) 0%, rgba(42, 54, 59, 0.8) 100%), url(../assets/img/bg-cover.jpg) no-repeat center center fixed;
 }
 .cover h1 {
     line-height: 1.5;
@@ -137,6 +137,9 @@ hr.light {
 }
 
 @media screen and (max-width: 768px) {
+    .cover {
+        background-attachment: scroll;
+    }
     .cover .btn {
         width: 100% !important;
     }
