@@ -42,6 +42,9 @@ a:hover {
 .text-dark {
     color: var(--dark) !important;
 }
+.text-muted-white {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
 
 .btn {
     border-radius: 4px;
@@ -103,11 +106,21 @@ hr.light {
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 9999;
 }
-
 .custom-navbar-dark .navbar-nav > .nav-item > .nav-link {
     font-size: 16px;
     padding: 30px 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-navbar-dark {
+        background: var(--dark) !important;
+        position: relative;
+    }
+    .custom-navbar-dark .navbar-nav > .nav-item > .nav-link {
+        padding: 10px 0;
+    }
 }
 
 /* Cover */
