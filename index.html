@@ -12,13 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Css files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-grid.css" rel="stylesheet"/>
+    <link href="css/bootstrap/bootstrap-reboot.css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body id="page-top" class="bg-dark">
 
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4" id="main-navbar">
     <div class="container">
         <a class="navbar-brand" href="#">Web Dev Bootcamp</a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#customNav" aria-controls="customNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,8 +29,10 @@
 
         <div class="collapse navbar-collapse" id="customNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active text-right"><a href="#" class="nav-link">Головна</a></li>
-                <li class="nav-item text-right"><a href="#" class="nav-link">Матеріали</a></li>
+                <!--<li class="nav-item text-right"><a href="#feedback" class="nav-link js-scroll-trigger">Відгуки</a></li>-->
+                <li class="nav-item text-right"><a href="#result" class="nav-link js-scroll-trigger">Детальніше</a></li>
+                <li class="nav-item text-right"><a href="#structure" class="nav-link js-scroll-trigger">Структура курсу</a></li>
+                <li class="nav-item text-right"><a href="#contact" class="nav-link js-scroll-trigger">Контакти</a></li>
             </ul>
         </div>
     </div>
@@ -58,21 +62,6 @@
 </div>
 <!-- /page cover -->
 
-<!--&lt;!&ndash; promo section &ndash;&gt;-->
-<!--<section class="page-section bg-white promo" id="promo">-->
-    <!--<div class="container">-->
-        <!--<div class="row align-items-center">-->
-            <!--<div class="col-md-4 counter text-center text-md-right">-->
-                <!--<span class="font-weight-bold text-dark">10</span>-->
-            <!--</div>-->
-            <!--<div class="col-md-8 text-center text-md-left">-->
-                <!--<h2 class="my-0 text-dark">Безкоштовний курс!</h2>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
-<!--&lt;!&ndash; /promo section &ndash;&gt;-->
-
 <!-- result section -->
 <section class="page-section bg-primary" id="result">
     <div class="container">
@@ -93,42 +82,6 @@
     </div>
 </section>
 <!-- /result section -->
-
-<!-- feedback section -->
-<section class="page-section bg-semi-dark" id="feedback">
-    <div class="container">
-        <div class="row text-muted-white">
-            <div class="col-md">
-                <div class="media d-block mb-4 mb-md-0 text-center">
-                    <i class="fas fa-user fa-3x mb-3 text-white"></i>
-                    <div class="media-body p-3">
-                        <p class="mb-3">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.”</p>
-                        <h5 class="mt-0 text-white">James Rogeer</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="media d-block mb-4 mb-md-0 text-center">
-                    <i class="fas fa-users fa-3x mb-3 text-white"></i>
-                    <div class="media-body p-3">
-                        <p class="mb-3">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.“</p>
-                        <h5 class="mt-0 text-white">Craig Rose</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md">
-                <div class="media d-block text-center">
-                    <i class="fas fa-user fa-3x mb-3 text-white"></i>
-                    <div class="media-body p-3">
-                        <p class="mb-3">“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.“</p>
-                        <h5 class="mt-0 text-white">Christian Rich</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /feedback section -->
 
 <!-- details section -->
 <section class="page-section bg-dark" id="details">
@@ -183,7 +136,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-10 mx-auto custom-scrollbar-css">
                 <!-- Timeline -->
                 <ul class="timeline">
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
@@ -199,43 +152,42 @@
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
                         <h5 class="mb-0 font-weight-bold">Вступ до HTML</h5>
                         <ul class="mt-2 structure-list">
-                            <li>blah</li>
-                            <li>blah</li>
+                            <li>Вступ до HTML</li>
+                            <li>Структура HTML-тегів</li>
+                            <li>Структурування тексту в HTML</li>
+                            <li>HTML списки</li>
+                            <li>Зображення в HTML</li>
+                            <li>Посилання</li>
                         </ul>
                     </li>
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
                         <h5 class="mb-0 font-weight-bold">Вступ до CSS</h5>
+                        <span class="small text-gray">Додамо в процесі тестового курсу...</span>
                         <ul class="mt-2 structure-list">
-                            <li>blah</li>
-                            <li>blah</li>
-                            <li>blah</li>
                         </ul>
                     </li>
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
                         <h5 class="mb-0 font-weight-bold">HTML глибше</h5>
+                        <span class="small text-gray">Додамо в процесі тестового курсу...</span>
                         <ul class="mt-2 structure-list">
-                            <li>blah</li>
                         </ul>
                     </li>
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
                         <h5 class="mb-0 font-weight-bold">CSS глибше</h5>
+                        <span class="small text-gray">Додамо в процесі тестового курсу...</span>
                         <ul class="mt-2 structure-list">
-                            <li>blah</li>
-                            <li>blah</li>
                         </ul>
                     </li>
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
                         <h5 class="mb-0 font-weight-bold">Знайомство з Bootstrap 4</h5>
+                        <span class="small text-gray">Додамо в процесі тестового курсу...</span>
                         <ul class="mt-2 structure-list">
-                            <li>blah</li>
                         </ul>
                     </li>
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
                         <h5 class="mb-0 font-weight-bold">Bootstrap глибше</h5>
+                        <span class="small text-gray">Додамо в процесі тестового курсу...</span>
                         <ul class="mt-2 structure-list">
-                            <li>blah</li>
-                            <li>blah</li>
-                            <li>blah</li>
                         </ul>
                     </li>
                     <li class="timeline-item ml-0 ml-md-3 p-0 p-md-4 mb-4 mb-md-0">
@@ -284,9 +236,12 @@
     <div class="container"><div class="small text-center text-muted-white">Copyright © 2020 - Paul Tsimura</div></div>
 </footer>
 
-<!-- Bootstrap core JS-->
+<!-- Bootstrap core JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
+<script src="./js/bootstrap/bootstrap.bundle.js"></script>
+<!-- Third party plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Local JS -->
 <script src="./js/script.js"></script>
 
 </body>

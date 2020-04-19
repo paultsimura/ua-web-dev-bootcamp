@@ -18,6 +18,7 @@ body {
     line-height: 1.7;
     font-weight: 400;
     margin: 0;
+    position: relative;
 }
 
 a {
@@ -145,21 +146,17 @@ hr.light {
         color: #555;
     }
 
-    .navbar.active .nav-link {
+    .navbar.active .nav-link,
+    .navbar.active .nav-link:focus {
         color: #555;
         padding-top: .5rem;
         padding-bottom: .5rem;
     }
 
-    .navbar.active .nav-item.active .nav-link {
+    .navbar.active .nav-link.active,
+    .navbar.active .nav-link:hover {
         font-weight: bold;
         color: var(--primary);
-    }
-
-    .navbar.active .nav-link:hover,
-    .navbar.active .nav-link:focus {
-        color: #555;
-        text-decoration: none;
     }
 }
 
@@ -195,7 +192,7 @@ hr.light {
 }
 
 /*
- * Structure
+ * Promo
  */
 .promo {
     padding: 3rem 2rem;
@@ -249,6 +246,7 @@ ul.timeline .small {
         border-radius: 50%;
         border: 3px solid var(--dark);
         left: 11px;
+        margin-top: 5px;
         width: 14px;
         height: 14px;
         z-index: 400;
@@ -262,6 +260,28 @@ ul.timeline .small {
 .structure-list li {
     margin-bottom: .5rem;
     line-height: 1;
+}
+
+/* Custom Scrollbar using CSS */
+.custom-scrollbar-css {
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+/* scrollbar width */
+.custom-scrollbar-css::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* scrollbar track */
+.custom-scrollbar-css::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+/* scrollbar handle */
+.custom-scrollbar-css::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: var(--primary);
 }
 
 /*
