@@ -11,7 +11,8 @@
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+      && location.hostname === this.hostname) {
       let target = $(this.hash);
       target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
       if (target.length) {
@@ -31,7 +32,7 @@
   // Collapse Navbar
   const activateNavbar = function() {
     let $mainNavbar = $("#main-navbar");
-    if ($mainNavbar.offset().top > 100) {
+    if ($mainNavbar.offset().top > OFFSET) {
       $mainNavbar.addClass('active');
     } else {
       $mainNavbar.removeClass('active');

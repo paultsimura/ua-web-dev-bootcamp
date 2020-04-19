@@ -128,7 +128,6 @@ hr.light {
 @media screen and (max-width: 768px) {
     .navbar {
         background: var(--dark) !important;
-        position: relative;
     }
     .navbar .navbar-nav > .nav-item > .nav-link {
         padding: 10px 0;
