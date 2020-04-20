@@ -126,7 +126,8 @@ hr.light {
 
 /* Change navbar styling on small viewports */
 @media screen and (max-width: 768px) {
-    .navbar {
+    .navbar,
+    #main-navbar {
         background: var(--dark) !important;
     }
     .navbar .navbar-nav > .nav-item > .nav-link {
