@@ -60,64 +60,88 @@
                 <hr class="divider my-4">
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3">
-                <!-- Tabs nav -->
-                <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link mb-3 p-3 shadow-sm active d-flex align-items-center" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                        <i class="fas fa-info-circle mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Загальна інформація</span></a>
-
-                    <a class="nav-link mb-3 p-3 shadow-sm d-flex align-items-center" id="v-pills-html-tab" data-toggle="pill" href="#v-pills-html" role="tab" aria-controls="v-pills-html" aria-selected="false">
-                        <i class="fab fa-html5 mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">HTML</span></a>
-
-                    <a class="nav-link mb-3 p-3 shadow-sm d-flex align-items-center" id="v-pills-css-tab" data-toggle="pill" href="#v-pills-css" role="tab" aria-controls="v-pills-css" aria-selected="false">
-                        <i class="fab fa-css3 mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">CSS</span></a>
-
-                    <a class="nav-link mb-3 p-3 shadow-sm d-flex align-items-center" id="v-pills-bootstrap-tab" data-toggle="pill" href="#v-pills-bootstrap" role="tab" aria-controls="v-pills-bootstrap" aria-selected="false">
-                        <i class="fab fa-bootstrap mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Bootstrap</span></a>
-
-                    <a class="nav-link mb-3 p-3 shadow-sm d-flex align-items-center" id="v-pills-final-tab" data-toggle="pill" href="#v-pills-final" role="tab" aria-controls="v-pills-final" aria-selected="false">
-                        <i class="fa fa-check mr-2"></i>
-                        <span class="font-weight-bold small text-uppercase">Final</span></a>
-                </div>
-            </div>
-
-
-            <div class="col-md-9">
-                <!-- Tabs content -->
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade shadow-sm rounded bg-white show active p-5" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <h4 class="font-italic mb-4">Загальна інформація</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="embed-responsive embed-responsive-16by9 mb-3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+        <div class="row justify-content-center">
+            <div class="col">
+                <div class="p-4 bg-white rounded shadow-sm mb-2 mb-md-5">
+                <!-- Rounded tabs-->
+                <ul id="contentTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+                    <li class="nav-item flex-sm-fill">
+                        <a id="intro-tab" data-toggle="tab" href="#content-intro" role="tab" aria-controls="webDew"
+                           aria-selected="true" class="nav-link text-uppercase font-weight-bold mr-sm-3 active">Intro</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="html-tab" data-toggle="tab" href="#content-html" role="tab" aria-controls="html"
+                           aria-selected="false" class="nav-link text-uppercase font-weight-bold mr-sm-3">HTML</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="css-tab" data-toggle="tab" href="#content-css" role="tab" aria-controls="css" aria-selected="false"
+                           class="nav-link text-uppercase font-weight-bold">CSS</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="bootstrap-tab" data-toggle="tab" href="#content-bootstrap" role="tab" aria-controls="css"
+                           aria-selected="false" class="nav-link text-uppercase font-weight-bold">Bootstrap</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a id="final-tab" data-toggle="tab" href="#content-final" role="tab" aria-controls="css"
+                           aria-selected="false" class="nav-link text-uppercase font-weight-bold">Final</a>
+                    </li>
+                </ul>
+                <div id="contentTabContent" class="tab-content">
+                    <div id="content-intro" role="tabpanel" aria-labelledby="home-tab"
+                         class="tab-pane fade px-4 py-5 show active">
+                        <h5 class="mb-0 font-weight-bold">Front-End Web Development</h5>
+                        <span class="small text-gray">Вступна частина</span>
+                        <ul class="mt-2 structure-list">
+                            <li>Що ти отримаєш від цього курсу</li>
+                            <li>Як отримати максимум користі від навчання</li>
+                            <li>Як працюють веб-сайти</li>
+                            <li>Все, що треба для початку – налаштовуємо робоче місце</li>
+                        </ul>
+                    </div>
+                    <div id="content-html" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+                        <div class="row">
+                            <div class="col">
+                                <h5 class="mb-0 font-weight-bold">Вступ до HTML</h5>
+                                <ul class="mt-2 structure-list">
+                                    <li>Вступ до HTML</li>
+                                    <li>Структура HTML-тегів</li>
+                                    <li>Структурування тексту в HTML</li>
+                                    <li>HTML списки</li>
+                                    <li>Зображення в HTML</li>
+                                    <li>Посилання</li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                            </div>
                         </div>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <div class="row">
+                            <div class="col">
+                            </div>
+                            <div class="col">
+                                <h5 class="mb-0 font-weight-bold">HTML глибше</h5>
+                                <ul class="mt-2 structure-list">
+                                    <li>Introduction to HTML</li>
+                                    <li>The Anatomy of an HTML Tag</li>
+                                    <li>What we're building - HTML Personal Site</li>
+                                    <li>What is The HTML Boilerplate?</li>
+                                    <li>How to Structure Text in HTML</li>
+                                    <li>HTML Lists</li>
+                                    <li>HTML Image Elements</li>
+                                    <li>HTML Links and Anchor Tags</li>
+                                    <li>How to Ace this Course</li>
+                                    <li>Feedback Time!</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="tab-pane fade shadow-sm rounded bg-white p-5" id="v-pills-html" role="tabpanel" aria-labelledby="v-pills-html-tab">
-                        <h4 class="font-italic mb-4">HTML</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div id="content-css" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
                     </div>
-
-                    <div class="tab-pane fade shadow-sm rounded bg-white p-5" id="v-pills-css" role="tabpanel" aria-labelledby="v-pills-css-tab">
-                        <h4 class="font-italic mb-4">CSS</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div id="content-bootstrap" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
                     </div>
-
-                    <div class="tab-pane fade shadow-sm rounded bg-white p-5" id="v-pills-bootstrap" role="tabpanel" aria-labelledby="v-pills-bootstrap-tab">
-                        <h4 class="font-italic mb-4">Bootstrap</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div id="content-final" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
                     </div>
-
-                    <div class="tab-pane fade shadow-sm rounded bg-white p-5" id="v-pills-final" role="tabpanel" aria-labelledby="v-pills-final-tab">
-                        <h4 class="font-italic mb-4">Final</h4>
-                        <p class="font-italic text-muted mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                </div>
+                <!-- End rounded tabs -->
                 </div>
             </div>
         </div>
