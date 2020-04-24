@@ -30,6 +30,10 @@ a:hover {
     text-decoration: none;
 }
 
+code {
+    color: var(--primary);
+}
+
 .bg-dark {
     background: var(--dark) !important;
 }
@@ -325,4 +329,16 @@ ul.timeline .small {
 
 .border-left-primary {
     border-left: 1px solid var(--primary);
+}
+.border-left-primary-bold {
+    border-left: 2px solid var(--primary);
+}
+
+.code-result {
+    border-left: 1px solid var(--dark);
+    padding-left: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
 }
