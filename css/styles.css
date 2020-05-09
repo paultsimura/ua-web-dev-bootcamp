@@ -129,7 +129,7 @@ hr.light {
 }
 
 /* Change navbar styling on small viewports */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .navbar,
     #main-navbar {
         background: var(--dark) !important;
@@ -140,36 +140,35 @@ hr.light {
 }
 
 /* Change navbar styling on scroll */
-@media screen and (min-width: 768px) {
-    .navbar.active,
-    #main-navbar.active {
-        background: #fff !important;
-        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
-    }
+.navbar.active,
+#main-navbar.active {
+    background: #fff !important;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
 
-    .navbar.active .navbar-brand {
-        color: #555;
-    }
+.navbar.active .navbar-brand,
+.navbar.active button svg {
+    color: #555!important;
+}
 
-    .navbar.active .nav-link,
-    .navbar.active .nav-link:focus {
-        color: #555;
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-    }
+.navbar.active .nav-link,
+.navbar.active .nav-link:focus {
+    color: #555;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
 
-    .navbar.active .nav-link.active,
-    .navbar.active .nav-link:hover {
-        font-weight: bold;
-        color: var(--primary);
-    }
+.navbar.active .nav-link.active,
+.navbar.active .nav-link:hover {
+    font-weight: bold;
+    color: var(--primary);
 }
 
 /*
  * Cover
  */
-.cover {
-    background: linear-gradient(to bottom, rgba(42, 54, 59, 0.5) 0%, rgba(42, 54, 59, 0.8) 100%), url(../assets/img/bg-cover-opt.jpg) no-repeat center center fixed;
+#index-cover {
+    background: linear-gradient(to bottom, rgba(42, 54, 59, 0.5) 0%, rgba(42, 54, 59, 0.8) 100%), url(../assets/img/bg-cover-opt.jpg) no-repeat center center;
 }
 .cover h1 {
     line-height: 1.5;
@@ -180,12 +179,10 @@ hr.light {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-@media screen and (max-width: 768px) {
-    .cover {
-        background-attachment: scroll;
-    }
-    .cover .btn {
-        width: 100% !important;
+/* Phone & Tablet view */
+@media screen and (max-width: 992px) {
+    .cover .row {
+        padding-top: 60px;
     }
     .cover h1 {
         font-size: 1.6rem;
@@ -193,6 +190,15 @@ hr.light {
     }
     .cover .lead {
         font-size: 1rem;
+    }
+}
+/* Phone view */
+@media screen and (max-width: 768px) {
+    .cover {
+        background-attachment: scroll;
+    }
+    .cover .btn {
+        width: 100% !important;
     }
 }
 
@@ -292,6 +298,18 @@ ul.timeline .small {
 /*
  * Content
  */
+#content-cover {
+    background: linear-gradient(to bottom, rgba(52, 65, 70, 0.1) 0%, rgba(255, 255, 255, 1) 100%), url(../assets/img/content-cover.jpg) no-repeat center center;
+}
+#content-cover .row {
+    min-height: 20rem;
+}
+@media (max-width: 576px) {
+    #content-cover .row {
+        min-height: 15rem;
+    }
+}
+
 /* Rounded tabs */
 .rounded-nav .nav-link {
     transition: .15s ease-in-out;
