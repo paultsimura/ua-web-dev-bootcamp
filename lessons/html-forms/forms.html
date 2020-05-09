@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+
+<form action="#" method="post" enctype="multipart/form-data">
+    <div>
+        <p>Ім'я:</p>
+        <input type="text" name="name" placeholder="Ім'я" tabindex="1">
+    </div>
+    <div>
+        <p>Пароль:</p>
+        <input type="password" name="password" tabindex="3">
+    </div>
+    <div>
+        <p>Вік:</p>
+        <input type="tel" name="age" tabindex="2">
+    </div>
+    <div>
+        <p>Оціни свої знання HTML:</p>
+        <p><input type="radio" name="knowledge" value="0"> 0</p>
+        <p><input type="radio" name="knowledge" value="1" checked> 1</p>
+        <p><input type="radio" name="knowledge" value="2"> 2</p>
+        <p><input type="radio" name="knowledge" value="3"> 3</p>
+        <p><input type="radio" name="knowledge" value="4"> 4</p>
+    </div>
+    <div>
+        <p>Які технології ти вже знаєш?</p>
+        <p><input type="checkbox" name="skillHtml" value="html" checked> html</p>
+        <p><input type="checkbox" name="skillCss" value="css" checked> css</p>
+    </div>
+    <div>
+        <p>Завантаж своє фото:</p>
+        <input type="file" name="photo">
+    </div>
+    <div>
+        <p>Що ти хочеш отримати від цього курсу?</p>
+        <textarea name="expectations"></textarea>
+    </div>
+    <div>
+        <p>Обери формат курсу:</p>
+        <select name="format">
+            <option value="free">Базовий – безкоштовний доступ до всіх ресурсів</option>
+            <option value="advanced">Оптимальний – базовий + доступ до чату</option>
+            <option value="full">Преміум – оптимальний + особисті консультації</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <button type="submit">Зареєструватись!</button>
+    </div>
+</form>
+
+</body>
+</html>
